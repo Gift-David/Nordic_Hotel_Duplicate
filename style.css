@@ -1,0 +1,2351 @@
+*{
+    font-family: "Noyh" sans-serif;
+    text-align: center;
+    margin: 10px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+/* body{
+    background-color: #fff;
+} */
+body{
+    background: rgba(219,159,100,.1);
+    margin-left: 150px;
+    margin-right: 150px;
+    /* background: linear-gradient (0deg,rgba(219,159,100,.1) 0%,rgba(219,159,100,.1) 95%,rgba(255,255,255,0) 100%); */
+}
+.header{
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+
+.booknow_container {
+    width: 100%;
+    display: block;
+    position: fixed;
+    margin: 0 auto;
+    max-width: 1238px;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,0%);
+    transition: 0.2s ease-in-out;
+} 
+h1::selection, h2::selection{
+    background-color: blue;
+    color: white;
+}
+p::selection{
+    background-color: blue;
+    color: white;
+}
+
+.swiper{
+    width: 100%;
+}
+
+.swiper-slide{
+    width: 100%;
+}
+
+.orderNow{
+    justify-content: center;
+    position: fixed;
+    display: flex;
+    padding: 15px;
+    justify-self: right;
+    border-radius: 90px;
+    margin-left: 20%;
+    top: 25px;
+    right: 20px;
+    left: 62.5%;
+    bottom: 0px;
+    height: 95px;
+    width: 95px;
+    transform: rotate(-5deg);
+    text-align: center;
+    border: 1px solid rgb(150, 107, 79);
+    background-color: #DB9F64;
+    box-shadow: 0 4px 20px rgba(29,33,55,.2);
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 120;
+}
+.orderNow a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    top: 100px;
+    text-align: center;
+    float: left;
+    font-weight: bolder;
+}
+
+button a:hover{
+    background: rgb(21, 21, 46);
+    border: 0.5px solid rgb(21, 21, 46);
+}
+button:hover{
+    background: rgb(21, 21, 46);
+    border: 0.5px solid rgb(21, 21, 46);
+}
+.navBar{
+   border: 2px solid  #1D2137;
+   background-color: #1D2137;
+   padding: 0px;
+   /* padding-left: 15px;
+   padding-right: 15px;
+   margin: 5px; */
+   border-top: 4px solid #DB9F64;
+   border-radius: 4px;
+   box-shadow: 0 4px 20px rgb(29 33 55 /20%);
+   /* display: block; */
+}
+
+.navbar {
+    display: flex; 
+    list-style: none;
+    justify-content: space-between;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.topNav{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.topNav ul{
+    display: flex; 
+    justify-content: space-between;
+    /* margin-block-start: 1em; */
+    /* margin-block-end: 1em; */
+}
+
+.topNav ul li{
+    list-style: none;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    /* font-size: 1rem; */
+}
+
+
+
+.topNav ul li a{
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    font-size: 20px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+} 
+
+
+.topNav ul li a:hover{
+    background: transparent;
+    color: rgb(216, 149, 104);
+    transition: 0.5s;
+}
+.topNav ul li a:active::after{
+    background: transparent;
+    color: darkblue;
+}
+
+.bottomBar{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-top: 0.0001px solid rgba(240, 227, 227, 0.308);
+    vertical-align: baseline;
+    outline: 0;
+    font-style: inherit;
+    font-weight: inherit;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.bottomBar ul{
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    vertical-align: baseline;
+    column-gap: 30px;
+}
+
+.bottomBar ul li{
+    list-style: none;
+    justify-content: space-between;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0px 0px;
+}
+
+.bottomBar ul li a{
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+}
+.bottomBar ul li a:hover{
+    color: rgb(216, 149, 104);
+    transition: 0.1s;
+
+}
+
+
+.bottomBar ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #db9F64;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    transition: 0.1s;
+    color: #000;
+}   
+
+.bottomBar ul li:hover::after{
+    width: 100%;  
+}
+
+.bottomBar ul li:hover{
+    text-decoration-color: rgb(216, 149, 104);
+    color: rgb(216, 149, 104);
+    text-emphasis-color: rgb(216, 149, 104);
+    transition: 0.5s;
+}
+
+
+h1{
+    color: rgb(21, 21, 46);
+    font-weight: bold;
+    padding: 25px;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+h4{
+    color: rgb(21, 21, 46);
+    text-align: left;
+    padding-left: 350px;
+}
+P{
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+.p1{
+    text-align: center;
+    
+}
+
+h2{
+    text-align: left;
+    justify-content: left;
+    color: #000;
+    border-bottom: .5px solid orange;
+    font-size: 35px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+
+
+
+.roomsPage{
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(0, 0fr);
+    margin-bottom: 10px;
+}
+.roomBox1{
+    border: 4px solid #1D2137;
+    border-radius: 2px;
+    background-color: #1d2137;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    padding: 0px;
+    overflow: hidden;
+}
+.roomBox1:hover{
+    border: 4px solid #191c2e;
+    background-color: #191c2e;
+    transition: .4s;
+}
+
+.roomBox2{
+    border: 4px solid #ac495e;
+    border-radius: 2px;
+    background-color: #ac495e;
+    display: block;
+    background-size: cover;
+    justify-content: center;
+    padding: 15px;
+    overflow: hidden;
+}
+.roomBox2:hover{
+    border: 4px solid #943e50;
+    background-color: #943e50;
+    transition: .4s;
+}
+
+.roomBox3{
+    border: 4px solid #40605e;
+    border-radius: 2px;
+    background-color: #40605e;
+    display: block;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    padding: 0px;
+    overflow: hidden;
+}    
+.roomBox3:hover{
+    border: 4px solid #385554;
+    background-color: #385554;
+    transition: .4s;
+}
+
+.roomBox4{
+    border: 4px solid #1D2137;
+    border-radius: 2px;
+    background-color: #1d2137;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    padding: 0px;
+    overflow: hidden;
+}   
+.roomBox4:hover{
+    border: 4px solid #191c2e;
+    background-color: #191c2e;
+    transition: .4s;
+} 
+
+.contents{
+    color: #DB9F64;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 35px;
+}
+.contents img{
+    height: 90px;
+    width: 90px;
+}
+.contents p{
+    color: #DB9F64;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+}
+
+/* .swiper {
+    width: 600px;
+    height: 300px;
+  } */
+
+.sliderContainer{
+    width: 100%;
+}
+
+.slideContainer{
+    width: 100%;
+    position: relative;
+    margin: 0;
+    margin-bottom: 400px;
+    justify-content: center;
+}
+ 
+.slideImage{
+    height: 400px;
+    /* width: 100%; */
+    position: absolute;
+    justify-content: center;
+}
+
+.slideImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+.next-btn{
+    color: #000;
+    background-color: #000;
+    position: absolute;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    font-size: 20px;
+    z-index: 100;
+    cursor: pointer;
+    margin-bottom: 9000px;
+}
+.prev-btn{
+    color: #000;
+    background-color: #000;
+    position: absolute;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    font-size: 20px;
+    z-index: 100;
+    cursor: pointer;
+    margin-top: 25%;
+}
+
+.next-btn{
+    right: 0;
+}
+
+.prev-btn{
+    left: 0;
+}
+
+
+.roomsType{
+    /* display: flex; */
+    display: grid;
+    grid-row-gap: 4px;
+    grid-column-gap: 5px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.roomsType img{
+    width: 43;
+    justify-self: right;
+    margin: 0px;
+    flex: 1;
+}
+.rooms{
+    display: block;
+}
+.accessories{
+    display: flex;
+    grid-row-gap: 4px;
+    grid-column-gap: 5px;
+    grid-template-columns: repeat(0, 1fr);
+    /* /* grid-template-rows: repeat(0, 1fr); */
+    padding: 0;
+}
+.accessories ul{
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(2, 4fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+}
+.accessories ul li{
+    list-style: none;
+    display: grid;
+    /* grid-template-columns: repeat(2, 0fr); */
+    /* grid-template-rows: repeat(4, 2); */
+    text-align: left;
+    font-size: 14px;
+}
+.bedSize{
+    border: 2px solid #40605e;
+    background-color: #40605e;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    /* width: 30%; */
+    margin: 0px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+.bedSize p{
+    padding-left: 0px;
+    padding-right: 0px;
+    justify-content: space-between;
+    padding: 25px;
+}
+.suites{
+    border: 2px solid #1D2137;
+    background-color: #1D2137;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+    /* width: 30%; */
+}
+.suites p{
+    font-size: 14px;
+    padding: 25px;
+}
+
+.room1{
+    border: 2px solid #ac495e;
+    background-color: #ac495e;
+    width: 98%;
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 10px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: left;
+    justify-content: left;
+    border-radius: 3px;
+}
+.room1:hover{
+    border: 2px solid #833646;
+    background-color: #833646;
+    transition: 0.4s;
+}
+.room p{
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.room1 p{
+    padding-left: 25px;
+}
+.room1 p a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-align: left;
+}
+.room2{
+    border: 2px solid #40605a;
+    background-color: #40605a;
+    width: 98%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 10px;
+    color: white;
+    text-align: left;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.room2:hover{
+    border: 2px solid #2d4440;
+    background-color: #2d4440;
+    transition: 0.4s;
+}
+.room2 p{
+    padding-left: 25px;
+}
+.room2 p a{
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+.homeContent{
+    /* display: table; */
+}
+
+.homeContent1{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    padding: 0;
+    margin-top: 50px;
+    width: 7%;
+}
+.homeContent2{
+    display: flex;
+
+}
+.homeContent3{
+    display: flex;
+}
+.homeContent4{
+    display: grid;
+}
+
+
+.img1{
+    background-image: url(images/homeImages/room1.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0px;
+    font-size: 25px;
+    width: 80vh;
+    height: 80vh;
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+.img1 h3{
+    text-align: center;
+    margin-top: 200px;
+}
+.img1 h5{
+    text-align: center;
+    font-weight: lighter;
+}
+.img1 a{
+    color: white;
+    text-decoration: none;
+}
+
+.img2{
+    background-image: url(images/homeImages/Outside_seating_cosy_Nordic_Villa_Abuja_web-815x458-1-700x458.jpg);
+    margin: 0px;
+    background-position: center;
+    background-size: cover;
+    font-size: 25px;
+    width: 80vh;
+    height: 30vh;
+    padding: 50px;
+}
+.img2 h3{
+    margin-top:50px;
+    text-align: center;
+    /* width: 100%; */
+}
+.img2 h5{
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+    padding: 0;
+}
+.img2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.img3{
+    margin: 0px;
+    padding: 40px;
+    font-size: 25px;
+    width: 40vh;
+    height: 30vh;
+    /* margin-right: 2px; */
+    border: 2px solid rgb(214, 108, 125);
+    background-color: rgb(214, 108, 125);
+}
+.img3 h3{
+    margin-top: 50px;
+    text-align: center;
+    /* width: 100%; */
+}
+.img3 h5{
+    /* top: 80%; */
+    text-align: center;
+    /* width: 100%; */
+    font-weight: lighter;
+}
+.img3 a{
+    color: rgb(216, 149, 104);
+    text-decoration: none;
+}
+
+.img4{
+    margin: 0px;
+    padding: 40px;
+    font-size: 25px;
+    border: 2px solid rgb(184, 184, 184);
+    background-color: rgb(184, 184, 184);
+    width: 40vh;
+    height: 30vh;
+}
+.img4 h3{
+    /* top: 70%; */
+    /* padding: 40px; */
+    text-align: center;
+    /* width: 100%; */
+}
+.img4 h5{
+    /* top: 80%; */
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+}
+.img4 a{
+    color: rgb(216, 149, 104);
+    text-decoration: none;
+}
+
+.img5{
+    background-image: url(images/homeImages/Celebrating-a-special-ocassion-1300x841.jpg);
+    margin: 0px;
+    background-position: center;
+    background-size: cover;
+    margin: 15px;
+    font-size: 25px;
+    width: 80vh;
+    height: 50vh;
+    padding: 25px;
+    background-color: #000;
+    
+}
+.img5 h3{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+.img5 h5{
+    top: 10%;
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+}
+.img5 a{
+    color: white;
+    text-decoration: none;
+}
+
+.img6{
+    background-image: url(images/homeImages/Meeting_workshop_Nordic_Villa_Abuja_web-815x458-1.jpg);
+    margin: 15px;
+    background-position: center;
+    background-size: cover;
+    font-size: 25px;
+    width: 50vh;
+    width: 80vh;
+    height: 50vh;
+}
+.img6 h3{
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+.img6 h5{
+    top: 30%;
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+}
+.img6 a{
+    color: white;
+    text-decoration: none;
+}
+
+.img7{
+    background-image: url(images/homeImages/Studio_lounge_Nordic_Villa_Abuja_IMG_1124_web-815x458-1-700x458.jpg);
+    margin: 15px;
+    background-position: center;
+    background-size: cover;
+    font-size: 25px;
+    width: 80vh;
+    height: 30vh;
+    padding: 25px;
+}
+.img7 h3{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+.img7 h5{
+    top: 80%;
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+}
+.img7 a{
+    color: white;
+    text-decoration: none;
+}
+
+.img8{
+    background-image: url(images/homeImages/Corporate_company_agreement_Nordic_Villa_Abuja_1000x1000-700x700.jpeg);
+    margin: 0px;
+    background-position: center;
+    background-size: cover;
+    font-size: 25px;
+    width: 40vh;
+    height: 30vh;
+    padding: 25px;
+}
+.img8 h3{
+    margin-top: 80px;
+    top: 70%;
+    text-align: center;
+    width: 100%;
+}
+.img8 h5{
+    top: 80%;
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+}
+.img8 a{
+    color: white;
+    text-decoration: none;
+}
+
+.img9{
+    margin: 5px;
+    font-size: 25px;
+    padding: 20px;
+    width: 40vh;
+    height: 30vh;
+    border: 2px solid rgb(73, 122, 116);
+    background-color: rgb(73, 122, 116);
+    justify-content: center;
+}
+.img9 h3{
+    text-align: center;
+    width: 50%;
+}
+.img9 h5{
+    text-align: center;
+    width: 50%;
+    font-weight: lighter;
+}
+.img9 a{
+    color: rgb(216, 149, 104);
+    text-decoration: none;
+}
+
+.img10{
+    background-image: url(images/homeImages/BluCabana_pool_Nordic_Villa_Abuja_web-815x458-1-e1614681851633-700x458.jpg);
+    margin: 0px;
+    background-position: center;
+    background-size: cover;
+    font-size: 25px;
+    width: 50vh;
+    height: 50vh;
+    padding: 25px;
+}
+.img10 h3{
+    margin-top: 200px;
+    top: 70%;
+    text-align: center;
+    width: 100%;
+}
+.img10 h5{
+    top: 80%;
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+}
+.img10 a{
+    color: white;
+    text-decoration: none;
+}
+
+.img11{
+    /* position: relative; */
+    margin: 5px;
+    display: block;
+    font-size: 25px;
+    padding: 10px;
+    width: 50%;
+    height: 300px;
+    justify-content: center;
+    border: 2px solid rgb(21, 21, 46);
+    background-color: rgb(21, 21, 46);
+}
+.img11 h3{
+    /* position: absolute; */
+    text-align: center;
+    margin-top: 30px;
+    font-weight: lighter;
+}
+.img11 h5{
+    /* top: 80%; */
+    text-align: center;
+    width: 50%;
+    margin-top: 5px;
+    font-weight: lighter;
+}
+.img11 a{
+    color: rgb(216, 149, 104);
+    text-decoration: none;
+}
+
+.img12{
+    background-image: url(images/homeImages/Outside_Nordic_Villa_Abuja_web_724x408-700x408.jpg);
+    margin: 0px;
+    background-position: center;
+    background-size: cover;
+    font-size: 25px;
+    width: 40vh;
+    height: 30vh;
+    padding: 25px;
+}
+.img12 img{
+    height: 335px;
+    width: 100%;
+    flex: 0%;
+}
+.img12 h3{
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+}
+.img12 h5{
+    text-align: center;
+    width: 100%;
+    font-weight: lighter;
+}
+.img12 a{
+    color: white;
+    text-decoration: none;
+}
+
+.doubleImg{
+    display: flex;
+    margin: 5px;
+    padding: 0px;
+}
+
+.weddingPage{
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: repeat(0,fr); */
+    margin-bottom: 10px;
+    height: 280px;
+}
+.weddingBox1{
+    border: 4px solid #ac495e;
+    border-radius: 2px;
+    background-color: #ac495e;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    /* justify-content: center; */
+    padding: 0px;
+    overflow: hidden;
+    justify-content: center;
+}
+.weddingBox1:hover{
+    border: 4px solid #943e50;
+    background-color: #943e50;
+    transition: .4s;
+}
+
+
+.weddingBox2{
+    /* border: 4px solid #ac495e; */
+    border-radius: 2px;
+    background-image: url(Images2/amazing-smiling-wedding-couple-pretty-600w-1031107999.png);
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-size: cover;
+    justify-content: center;
+    padding: 15px;
+    background-position: center;
+    overflow: hidden;
+}
+.weddingBox3{
+    /* border: 4px solid #40605e; */
+    border-radius: 2px;
+    background-image: url(images2/scenic-view-beautiful-english-style-600w-1189775458.png);
+    display: block;
+    background-position: center;
+    background-size: cover;
+    /* display: block; */
+    justify-content: center;
+    padding: 0px;
+    overflow: hidden;
+    background-color: green;
+}  
+.weddingBox3:hover{
+    background-color: #000;
+}  
+
+.weddingBox4{
+    border: 4px solid #ac495e;
+    border-radius: 2px;
+    background-color: #ac495e;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    padding: 0px;
+    overflow: hidden;
+}    
+.weddingBox4:hover{
+    border: 4px solid #943e50;
+    background-color: #943e50;
+    transition: .4s;
+}
+
+
+
+.footer{
+   border: 2px solid  #1D2137;
+   background-color: #1D2137;
+   padding: 20px;
+   margin: 5px;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   border-top: 4px solid #DB9F64;
+   border-radius: 3px;
+   color: #DB9F64;
+   display: block;
+   justify-content: space-between;
+   font-size: 16px;
+}
+.topFooter{
+   padding: 20px;
+   margin: 5px;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   color: #DB9F64;
+   justify-content: space-between;
+   font-size: 16px;
+    display: flex;
+}
+.footer footer ul li{
+    font-size: 1rem;
+    display: block;
+    text-align: left;
+}
+.footer footer ul li a{
+    color: white;
+    text-align: left;
+}
+footer{
+    justify-content: space-between;
+}
+
+footer ul{
+    display: inline-block;
+    justify-content: space-between;
+    text-align: left;
+    font-size: 14px;
+}
+
+footer ul li{
+    list-style: none;
+    display: flex;
+    color: rgb(216, 149, 104);
+    /* justify-content: space-between; */
+    display: inline-block;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.bottomFooter{
+   border: 2px solid  #1D2137;
+   background-color: #1D2137;
+   padding: 0px;
+   margin: 5px;
+   margin-top: -1px;
+   border-top: 0.1px solid rgba(255, 255, 255, 0.267);
+   border-radius: 3px;
+   color: rgb(216, 149, 104);
+   display: flex;
+   justify-content: center;
+   font-size: 16px;
+}
+.footer li{
+    margin-top: 10px;
+}
+.footer li a:hover{
+    color: rgb(216, 149, 104);
+    transition: .2s;
+}
+
+.sign{
+    justify-content: left;
+    align-content: left;
+    font-size: 14px;
+}
+.sign input{
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 0.1px;
+    justify-content: left;
+}
+/* button a{
+    background-color: rgb(216, 149, 104);
+    color: white;
+    border: 2px solid rgb(216, 149, 104);
+    background: rgb(216, 149, 104);
+    transition: 0.5s;
+    border-radius: 5px;
+} */
+::placeholder{
+    text-align: left;
+    padding: 1px;
+}
+.socials{
+    display: flex;
+    justify-content: baseline;
+    padding: 4px;
+}
+.socials a img{
+    height: 25px;
+    width: 25px;
+    padding: 20px;
+    align-items: center;
+}
+
+.events h4{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 5px;
+    justify-self: left;
+    padding: 0;
+    padding-left: 192px;
+}
+.form{
+    padding-left: 350px;
+    padding-right: 350px;
+}
+.form form{
+    border-inline: 0px;
+}
+.form form input{
+    width: 98%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    margin-bottom: -10px;
+    justify-content: center;
+    text-align: left;
+    
+} 
+:placeholder{
+    color: red;
+}
+placeholder:nth-child(9){
+    color: red;
+}
+.email{
+    display: flex;
+    justify-content: space-between;
+}
+.email input{
+    width: 4%;
+    align-content: space-around;
+    /* margin: 4px; */
+}
+.form form textarea{
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 90px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    justify-content: center;
+    text-align: left;
+}
+.checkBox{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    /* height: 20px; */
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+.checkBox input{
+    height: 15px;
+    padding: 0;
+    padding-left: 400px;
+}
+.checkBox p{
+    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: left;
+}
+.form form button{
+    border-radius: 3px;
+    margin-left: 76%;
+    margin-top: 10px;
+    margin-right: 0px;
+    padding: 20px;
+    color: white;
+    border: 2px solid rgb(216, 149, 104);
+    background-color: rgb(216, 149, 104);
+    cursor: pointer;
+}
+.form form button:hover{
+    border: 2px solid rgb(21, 21, 46);
+    background-color: rgb(21, 21, 46);
+    transition: 0.5s;
+}
+
+.sign button{
+    color: black;
+    border: 4px solid #DB9F64;
+    background-color: #DB9F64;
+    border-radius: 3px;
+}
+.sign button:hover{
+    border: 4px solid rgb(223, 161, 120);
+    background-color: rgb(223, 161, 120);
+    border-radius: 3px;
+    transition: .5s;
+}
+
+
+        /*  -Responsive 1--*/
+@media(max-width: 1400px){
+*{
+    margin: 5px
+}
+body{
+    margin-left: 0px;
+    margin-right: 900px;
+    margin: 2px;
+    padding: 0;
+}
+h1{
+    color: rgb(21, 21, 46);
+    font-weight: bold;
+    padding: 25px;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: center;
+}
+
+h4{
+    color: rgb(21, 21, 46);
+    text-align: left;
+    padding-left: 350px;
+}
+P{
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 220px;
+    padding-right: 220px;
+    font-size: 1.2rem;
+}
+
+.p1{
+    text-align: center;
+    
+}
+
+h2{
+    text-align: left;
+    justify-content: left;
+    color: #000;
+    border-bottom: .5px solid orange;
+    font-size: 35px;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    } 
+.events h4{
+    padding-left: 215px;
+} 
+.form {
+    padding-left: 215px;
+    padding-right: 230px;
+    margin: 0;
+} 
+.form form button{
+    margin-left: 420px;
+    margin-right: 0px;
+    /* margin: 0; */
+    justify-self: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+}
+
+        /* - Responsive nav bar- */
+@media(max-width: 1079px){
+*{
+    margin: 3px;
+}
+body{
+    margin: 5px;
+}
+.header img{
+    height: 70px;
+    width: 70px;
+}  
+
+.menuIcon .fa-bars{
+    height: 200px;
+    width: 200px;
+    justify-content: left;
+    margin-left: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.navBar{
+    border: 2px solid  #1D2137;
+    background-color: #1D2137;
+    padding: 0px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    margin: 5px;
+    border-top: 4px solid #DB9F64;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgb(29 33 55 /20%);
+    display: block;
+    /* height: 30px; */
+ }
+ .topNav{
+    padding-left: 0px;
+    padding-right: 0px;
+} 
+.topNav ul li{
+    list-style: none;
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    font-size: 1rem;
+}   
+    .navBar ul li{
+        display: block;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .navBar ul{
+    display: block;
+    width: 100%;
+    left: 0px;
+    z-index: 0;
+    }
+    /* .navBar .fa{
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+    }  */
+    .topNav{
+        margin-bottom: 0px;
+        padding: px 80px;
+    }
+
+    .bottomBar{
+        display: flex;
+        justify-content: center;
+        color: white;
+        border-top: 0.0001px solid rgba(240, 227, 227, 0.308);
+        vertical-align: baseline;
+        outline: 0;
+        font-style: inherit;
+        font-weight: inherit;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+    .bottomBar ul{
+        display: block;
+        font-size: 15px;
+        justify-content: space-between;
+        /* column-gap: 30px; */
+    }
+    .bottomBar ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: transparent;
+        display: block;
+        margin: auto;
+        color: rgb(216, 149, 104);
+        transition: 0.5s;
+    }   
+
+    .bottomBar ul li a:hover{
+        color: rgb(248, 187, 106);
+        transition: 0.5s;
+    }
+        
+    .bottomBar ul li:hover::after{
+        width: 100%;   
+    }
+
+    .bottomBar ul li:hover{
+        text-decoration-color: rgb(216, 149, 104);
+        color: rgb(216, 149, 104);
+        transition: 0.5s;
+    }
+p{
+    font-size: 15px;
+    text-align: justify;
+    padding-left: 220px;
+    padding-right: 220px;
+    font-size: 1.2rem;
+}
+.events h4{
+
+}
+
+
+        /* ----------------------------------------------- */
+@media(max-width: 800px){
+    *{
+        margin: px;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 3px;
+        margin: 0px;
+    }
+    .body{
+        background-color: whitesmoke;
+        padding: 0px;
+        margin: 2px;
+    }
+    .header{
+        display: flex;
+        padding: 4px 4px;
+        margin: 4px;
+    }
+
+    .orderNow{
+        justify-content: center;
+        padding: 15px;
+        justify-self: right;
+        border-radius: 90px;
+        margin-left: 70%;
+        top: 35px;
+        right: 0px;
+        left: 70px;
+        height: 65px;
+        width: 65px;
+        text-align: center;
+        position: fixed;
+        /* position: absolute; */
+        border: 1px solid rgb(150, 107, 79);
+        background-color: rgb(216, 149, 104);
+    }
+    .orderNow a{
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+        top: 100px; 
+        float: left;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .body{
+        padding: 35px;
+    }
+    h1{
+        color: rgb(21, 21, 46);
+        font-weight: bold;
+    }
+    
+    h4{
+        color: rgb(21, 21, 46);
+        text-align: left;
+        padding-left: 150px;
+    }
+    .villaList ul{
+        text-align: left;
+        list-style: none;
+    }
+    .villaList ul li{
+        text-align: left;
+        justify-content: left;
+        display: block;
+        padding-left: 10px;
+        list-style: none;
+        justify-content: left;
+    }
+    P{
+        font-size: 15px;
+        text-align: left;
+        padding-left: 90px;
+        padding-right: 90px;
+        margin: 3px;
+       
+    }
+    h2{
+        text-align: left;
+        justify-content: left;
+        color: #000;
+        border-bottom: .5px solid rgb(216, 149, 104);
+        font-size: 35px;
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .roomsPage{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        margin-bottom: 10px;
+        height: 500px;
+    }
+    .bedSize{
+        /* border: 2px solid rgb(41, 66, 41); */
+        /* background-color: rgb(41, 66, 41); */
+        padding: 5px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+    }
+    .suites{
+        /* border: 2px solid rgb(21, 21, 46); */
+        /* background-color: rgb(21, 21, 46); */
+        color: white;
+        padding: 20px;
+    }
+    .weddingPage{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
+        margin-bottom: 10px;
+        height: 250px;
+    }
+    .navBar{
+    border: 2px solid  transparent;
+    background-color: transparent;
+    text-align: left;
+    /* padding: 20px; */
+    margin: 25px;
+    border-top: 4px solid transparent;
+    border-radius: 3px;
+    display: block;
+    left: 0px;
+    right: 0px;
+    }
+    
+    .navBar ul li{
+        display: block;
+        text-align: left;
+    }
+    .navBar ul{
+    border: 2px solid  rgb(21, 21, 46);
+    background-color: rgb(21, 21, 46);
+    text-align: left;
+    padding: 25px;
+    margin: -27px;
+    border-top: 4px solid rgb(216, 149, 104);
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    left: 0px;
+    z-index: 0;
+    transition: 1s;
+    }
+    .navBar .fa{
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        
+    } 
+    .topNav{
+        margin-bottom: 0px;
+        padding: px 80px;
+    }
+
+    .bottomBar{
+        /* border-top: 0.5px solid white; */
+        margin-top: 0px;
+
+    }
+    .bottomBar ul{
+        border-top: 0.5px solid transparent;
+        margin-top: 0px;
+    }
+    .bottomBar ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: transparent;
+        display: block;
+        margin: auto;
+        color: rgb(216, 149, 104);
+        transition: 0.5s;
+    }   
+    
+    .bottomBar ul li a:hover{
+        color: rgb(248, 187, 106);
+        transition: 0.5s;
+    }
+
+    .bottomBar ul li:hover::after{
+        width: 100%;   
+    }
+    
+    .bottomBar ul li:hover{
+        text-decoration-color: rgb(216, 149, 104);
+        color: rgb(216, 149, 104);
+        transition: 0.5s;
+    }
+    .socials{
+        display: flex;
+        justify-content: baseline;
+        padding: 4px;
+    }
+    .socials a img{
+        height: 25px;
+        width: 25px;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    .weddingPage{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,1fr);
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .contents{
+        color: #DB9F64;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin-top: 35px;
+    }
+    .events h4{
+        text-align: left;
+        font-size: 30px;
+        font-weight: 5px;
+        justify-self: left;
+        padding: 0;
+        padding-left: 94px;
+    }
+    .roomsType{
+        display: block;
+    }
+    .roomsType img{
+        width: 100%;
+    }
+    .rooms{
+        display: block;
+
+    }
+    .accessories ul li{
+        list-style: none;
+        display: block;
+        text-align: left;
+        font-size: 14px;
+    }
+    .bedSize{
+        border: 2px solid #40605e;
+        /* background-color: rgb(41, 66, 41); */
+        padding: 5px;
+        border-radius: 3px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 98%;
+        margin: 0px;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+    .suites{
+        border: 2px solid rgb(21, 21, 46);
+        background-color: rgb(21, 21, 46);
+        border-radius: 3px;
+        color: white;
+        padding: 0px;
+        width: 94%;
+        padding: 20px;
+    }
+    .suites p{
+        font-size: 14px;
+    }
+
+    .room1{
+        /* border: 2px solid rgb(214, 108, 125); */
+        /* background-color: rgb(214, 108, 125); */
+        width: 90%;
+        /* height: 70px; */
+        padding: 15px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: 10px;
+        margin-bottom: 10px;
+        color: white;
+        text-align: center;
+        border-radius: 3px;
+    }
+    .room1 p a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    .room2{
+        /* border: 2px solid rgb(41, 66, 41); */
+        /* background-color: rgb(41, 66, 41); */
+        width: 90%;
+        padding: 15px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: 10px;
+        color: white;
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 3px;
+    }
+    .room2 p a{
+        font-size: 1.5rem;
+    }
+        
+    .form{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .form form input{
+        width: 98%;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        justify-content: center;
+        text-align: left;
+    }
+    .email{
+        display: flex;
+        grid-column-gap: 10px;
+    }
+    .email input{
+        margin: 0px;
+    }
+    .form form textarea{
+        width: 98%;
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        justify-content: center;
+        text-align: left;
+    }
+    .form form button{
+        border-radius: 3px;
+        margin-left: 76%;
+        margin-top: 10px;
+        padding: 20px;
+        color: white;
+        border: 2px solid rgb(216, 149, 104);
+        background-color: rgb(216, 149, 104);
+    }
+    .form form button:hover{
+        border: 2px solid rgb(21, 21, 46);
+        background-color: rgb(21, 21, 46);
+        transition: 0.5s;
+    }
+    .weddingPage{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-bottom: 10px;
+        height: 600px;
+    }
+    .weddingBox1{
+        padding-top: 50px;
+    }
+    .weddingBox4{
+        padding-top: 50px;
+    }
+}
+
+     /*  ------------------------------------------- */
+@media(max-width: 1000px){
+    p{
+        padding-left:  100px;
+        padding-right: 100px;
+    }
+    h4{
+        padding-left: 100px;
+    }
+}
+
+     /*  ------------------------------------------- */
+@media(max-width: 800px){
+    p{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    h4{
+        padding-left: 5px;
+    }
+    .topFooter{
+        padding: 20px;
+        margin: 5px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        border-radius: 3px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        align-items: center;
+     }
+     .topFooter footer ul li{
+        font-size: 16px;
+        display: block;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        padding-left: 0;
+    }
+     footer ul li a{
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+     }
+     label{
+        font-size: 12px;
+     }
+     .sign input{
+        font-size: 12px;
+     }
+     .sign button{
+        font-size: 12px;
+     }
+}
+        
+       
+         /*  ------------------------------------------- */
+@media(max-width: 600px){
+    *{
+        margin: 2px;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 3px;
+        margin: 0px;
+    }
+    body{
+        background-color: #fff;
+        padding: 0px;
+        margin: 2px;
+    }
+    p{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    h4{
+        padding-left: 6px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: .2rem;
+    }
+    .orderNow{
+        justify-content: center;
+        padding: 20px ;
+        padding-top: 8px;
+        padding-bottom: 20px;
+        justify-self: right;
+        border-radius: 90px;
+        margin-left: 70%;
+        top: 35px;
+        right: 0px;
+        left: 30px;
+        height: 58px;
+        width: 58px;
+        text-align: center;
+        position: fixed;
+        font-size: 8px;
+        font-weight: li;
+        /* position: absolute; */
+        border: 1px solid rgb(150, 107, 79);
+    }
+    .homeContent1{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-columns: repeat(1,2fr);
+        grid-template-rows: repeat(3,fr);
+        padding: 0;
+        /* margin-top: 50px; */
+        width: 7%;
+    }
+    .img1{
+        background-image: url(images/homeImages/room1.jpg);
+        background-position: center;
+        background-size: cover;
+        margin: 0px;
+        font-size: 25px;
+        width: 120%;
+        height: 80vh;
+        /* text-align: center; */
+        /* justify-content: center; */
+    }
+    .img1 h3{
+        text-align: center;
+        margin-top: 200px;
+    }
+    .img1 h5{
+        text-align: center;
+        font-weight: lighter;
+    }
+    .img1 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .img2{
+        background-image: url(images/homeImages/Outside_seating_cosy_Nordic_Villa_Abuja_web-815x458-1-700x458.jpg);
+        margin: 0px;
+        background-position: center;
+        background-size: cover;
+        font-size: 25px;
+        width: 120%;
+        height: 30vh;
+        padding: 0px;
+    }
+    .img2 h3{
+        margin-top:50px;
+        text-align: center;
+        /* width: 100%; */
+    }
+    .img2 h5{
+        text-align: center;
+        width: 100%;
+        font-weight: lighter;
+        padding: 0;
+    }
+    .img2 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .img3{
+        margin: 0px;
+        padding: 40px;
+        font-size: 25px;
+        width: 40vh;
+        height: 30vh;
+        /* margin-right: 2px; */
+        border: 2px solid rgb(214, 108, 125);
+        background-color: rgb(214, 108, 125);
+    }
+    .img3 h3{
+        margin-top: 50px;
+        text-align: center;
+        /* width: 100%; */
+    }
+    .img3 h5{
+        /* top: 80%; */
+        text-align: center;
+        /* width: 100%; */
+        font-weight: lighter;
+    }
+    .img3 a{
+        color: rgb(216, 149, 104);
+        text-decoration: none;
+    }
+    
+    .img4{
+        margin: 0px;
+        padding: 40px;
+        font-size: 25px;
+        border: 2px solid rgb(184, 184, 184);
+        background-color: rgb(184, 184, 184);
+        width: 40vh;
+        height: 30vh;
+    }
+    .img4 h3{
+        /* top: 70%; */
+        /* padding: 40px; */
+        text-align: center;
+        /* width: 100%; */
+    }
+    .img4 h5{
+        /* top: 80%; */
+        text-align: center;
+        width: 100%;
+        font-weight: lighter;
+    }
+    .img4 a{
+        color: rgb(216, 149, 104);
+        text-decoration: none;
+    }
+    
+    .img5{
+        background-image: url(images/homeImages/Celebrating-a-special-ocassion-1300x841.jpg);
+        margin: 0px;
+        background-position: center;
+        background-size: cover;
+        margin: 2px;
+        font-size: 25px;
+        width: 60%;
+        height: 50vh;
+        padding: 25px;
+        background-color: #000;
+        
+    }
+    .img5 h3{
+        margin-top: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .img5 h5{
+        top: 10%;
+        text-align: center;
+        width: 100%;
+        font-weight: lighter;
+    }
+    .img5 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .img6{
+        background-image: url(images/homeImages/Meeting_workshop_Nordic_Villa_Abuja_web-815x458-1.jpg);
+        margin: 2px;
+        background-position: center;
+        background-size: cover;
+        font-size: 25px;
+        width: 66.5%;
+        height: 50vh;
+    }
+    .img6 h3{
+        margin-top: 100px;
+        text-align: center;
+        width: 100%;
+    }
+    .img6 h5{
+        top: 30%;
+        text-align: center;
+        width: 100%;
+        font-weight: lighter;
+    }
+    .img6 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .img7{
+        background-image: url(images/homeImages/Studio_lounge_Nordic_Villa_Abuja_IMG_1124_web-815x458-1-700x458.jpg);
+        margin: 3px;
+        background-position: center;
+        background-size: cover;
+        font-size: 25px;
+        width: 60%;
+        height: 50vh;
+        padding: 25px;
+    }
+    .img7 h3{
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+    .img7 h5{
+        top: 80%;
+        text-align: center;
+        width: 100%;
+        font-weight: lighter;
+    }
+    .img7 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .img8{
+        background-image: url(images/homeImages/Corporate_company_agreement_Nordic_Villa_Abuja_1000x1000-700x700.jpeg);
+        margin: 0px;
+        background-position: center;
+        background-size: cover;
+        font-size: 25px;
+        width: 30%;
+        height: 30vh;
+        padding: 25px;
+    }
+    .img8 h3{
+        margin-top: 80px;
+        top: 70%;
+        text-align: center;
+        width: 100%;
+    }
+    .img8 h5{
+        top: 80%;
+        text-align: center;
+        width: 100%;
+        font-weight: lighter;
+    }
+    .img8 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .img9{
+        margin: 5px;
+        font-size: 25px;
+        padding: 20px;
+        width: 25%;
+        height: 30vh;
+        border: 2px solid rgb(73, 122, 116);
+        background-color: rgb(73, 122, 116);
+        justify-content: center;
+    }
+    .img9 h3{
+        text-align: center;
+        width: 50%;
+    }
+    .img9 h5{
+        text-align: center;
+        width: 50%;
+        font-weight: lighter;
+    }
+    .img9 a{
+        color: rgb(216, 149, 104);
+        text-decoration: none;
+    }
+    
+    .img10{
+        background-image: url(images/homeImages/BluCabana_pool_Nordic_Villa_Abuja_web-815x458-1-e1614681851633-700x458.jpg);
+        margin: 9px;
+        background-position: center;
+        background-size: cover;
+        font-size: 25px;
+        width: 59%;
+        height: 50vh;
+        padding: 25px;
+    }
+    .img10 h3{
+        margin-top: 200px;
+        top: 70%;
+        text-align: center;
+        width: 100%;
+    }
+    .img10 h5{
+        top: 80%;
+        text-align: center;
+        width: 100%;
+        font-weight: lighter;
+    }
+    .img10 a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .img11{
+        margin: 5px;
+        display: block;
+        font-size: 25px;
+        padding: 0px;
+        width: 35%;
+        height: 250px;
+        justify-content: center;
+        border: 2px solid rgb(21, 21, 46);
+        background-color: rgb(21, 21, 46);
+    }
+    .img11 h3{
+        text-align: center;
+        margin-top: 0px;
+        font-weight: lighter;
+    }
+    .img11 h5{
+        text-align: center;
+        width: 50%;
+        margin-top: 0px;
+        font-weight: lighter;
+    }
+    .img11 a{
+        color: rgb(216, 149, 104);
+        text-decoration: none;
+    }
+    
+    .img12{
+        background-image: url(images/homeImages/Outside_Nordic_Villa_Abuja_web_724x408-700x408.jpg);
+        margin: 0px;
+        background-position: center;
+        background-size: cover;
+        font-size: 25px;
+        width: 23%;
+        height: 30vh;
+        padding: 25px;
+    }
+    .img12 img{
+        height: 335px;
+        width: 100%;
+        flex: 0%;
+    }
+    .img12 h3{
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+    }
+    .img12 h5{
+        text-align: center;
+        width: 100%;
+        font-weight: lighter;
+    }
+    .img12 a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .roomsType{
+        display: block;
+    }
+    .roomsType img{
+        width: 50vh;
+    }
+    .rooms{
+        display: block;
+
+    }
+    .accessories ul li{
+        list-style: none;
+        display: block;
+        text-align: left;
+        font-size: 14px;
+    }
+    .suites{
+        border: 2px solid rgb(21, 21, 46);
+        background-color: rgb(21, 21, 46);
+        border-radius: 3px;
+        color: white;
+        width: 94%;
+        padding: 15px;
+    }
+    .suites p{
+        font-size: 14px;
+    }
+    .room1{
+        width: 90%;
+        height: 50px;
+        padding: 15px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: 0px;
+        margin-top: 40px;
+        margin-bottom: 10px;
+        color: white;
+        text-align: center;
+        border-radius: 3px;
+    }
+    .room1 p a{
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    .weddingPage{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        margin-bottom: 10px;
+        height: 400px;
+    }
+    .contents{
+        color: #DB9F64;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .events h4{
+        text-align: left;
+        font-size: 30px;
+        font-weight: 0.05rem;
+        justify-self: left;
+        padding: 0;
+        padding-left: 5px;
+    }
+    .form form button{
+        border-radius: 3px;
+        margin-left: 68%;
+        margin-top: 10px;
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: white;
+        border: 2px solid rgb(216, 149, 104);
+        background-color: rgb(216, 149, 104);
+    }
+    .weddingPage{
+        display: grid;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        /* grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,fr);*/
+        margin-bottom: 10px;
+        height: 500px;
+    }
+
+    .topFooter{
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        display: grid;
+        justify-content: space-between;
+        font-size: 16px;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-columns: repeat(2,0fr);
+        grid-template-rows: repeat(2, 0fr);
+        align-items: center;
+        margin-bottom: 15px;
+     }
+    .topFooter footer ul li{
+        font-size: 14px;
+        display: block;
+        text-align: left;
+        padding: 0;
+        padding-left: 0;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+     footer ul li a{
+        font-size: 11px;
+        padding: 0;
+        margin: 0;
+     }
+     label{
+        font-size: 12px;
+     }
+     .sign input{
+        font-size: 12px;
+     }
+     .sign button{
+        font-size: 12px;
+     }
+     .footer{
+         padding-block: 0px;
+     }
+     .footer1{
+         margin: -20px;
+     }
+     .footer2{
+         margin: 0px;
+     }
+     .topFooter{
+       padding: 0px;
+       margin: 0px;
+       margin-bottom: 0px;
+       margin-top: 0px;
+       color: #DB9F64;
+       justify-content: space-between;
+       font-size: 16px;
+       column-gap: 0px;
+    }
+}
